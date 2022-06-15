@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 class Aluno {
-    public $nome; //atributos
-    public $cpf; //atributos
+    public string $nome; //atributos
+    public string $cpf; //atributos
 }
 
