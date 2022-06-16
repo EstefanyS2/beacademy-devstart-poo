@@ -8,6 +8,13 @@ class Gestor extends Usuario
     private float $salario;
     private string $horario;
 
+    public function __construct(string $email, string $senha, float $salario)
+    {
+        parent::setEmail($email);
+        parent::setSenha($senha);
+        $this->salario = $salario;
+    }
+
     public function getSalario(): float
     {
         return $this->salario;

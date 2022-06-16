@@ -1,6 +1,6 @@
 <?php
 
-class Usuario
+abstract class Usuario
 {
     private string $nome;
     private string $email;
@@ -23,32 +23,32 @@ class Usuario
         $this->nome = $nome;
     }
 
-    public function setEmail(): string
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    public function getEmail(string $email): void
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function setCpf(): string
+    public function getCpf(): string
     {
         return $this->cpf;
     }
 
-    public function getCpf(string $cpf): void
+    public function setCpf(string $cpf): void
     {
         $this->cpf =$cpf;
     }
 
-    public function setSenha(string $senha): string
+    public function getSenha(string $senha): string
     {
         return $this->senha = $senha;
     }
 
-    public function getSenha(string $senha): void 
+    public function setSenha(string $senha): void 
     {
         $this->senha = $senha;
     }
