@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-
-class ClienteVip
+class Categoria
 {
-    
+
 }
