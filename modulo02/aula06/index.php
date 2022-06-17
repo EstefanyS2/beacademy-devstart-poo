@@ -4,15 +4,18 @@ ini_set('display_errors', 1);
 
 include 'vendor/autoload.php';
 
-use Classes\Config\Usuario;
-use Classes\Categoria;
+use Dompdf\Dompdf;
 
-//$us1 = new Classes\usuario();
-// $us2 = new Classes\Config|Usuario();
-$c1 = new Categoria();
+// instantiate and use the dompdf class
+$dompdf = new Dompdf();
 
-$us2 = new Usuario();
+$html = '';
 
+for ($n =  0; $n < 10; $n++) {
+    $html .= 'ó o pente! <br>';
+}
+$dompdf->loadHtml('<h1>Ola mundo, estou aprendendo Php</h1>');
 
-// var_dump($us1);
-var_dump($us2);
+$dompdf->render(); //renderiza 
+
+$dompdf->stream(); //faz com que gere o pdf
