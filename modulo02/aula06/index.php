@@ -14,7 +14,7 @@ $html = '';
 for ($n =  0; $n < 10; $n++) {
     $html .= 'ó o pente! <br>';
 }
-$dompdf->loadHtml('<h1>Ola mundo, estou aprendendo Php</h1>');
+$dompdf->loadHtml('<h1>Ola mundo, estou aprendendo Php</h1>'.$html);
 
 $dompdf->render(); //renderiza 
 
